@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Lowes Foods - Load All To Card",
+    "version": "0.0.6",
+
+    "description": "Load all coupons to card",
+
+    "action": {
+        "default_title": "lowes_foods_load_all_to_card"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.lowesfoods.com/*"
+            ],
+            "js": ["main.js"]
+        }
+    ]
+}
